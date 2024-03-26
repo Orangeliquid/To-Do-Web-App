@@ -1,0 +1,21 @@
+<nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://github.com/Orangeliquid">
+            <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="42" height="42" class="rounded-circle border border-theme me-3">
+            <span class="navbar-text">Orangeliquid | To-Do Tool</span>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+            <ul class="navbar-nav me-auto mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('about') }}">About</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('signout') }}">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

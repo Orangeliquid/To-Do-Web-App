@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Sign In{% endblock %}
+{% block content %}
+
+<main class="d-flex align-items-center justify-content-center py-4 bg-body-tertiary dot-bg"
+      style="min-height: calc(100vh - 200px);">
+    <div class="form-signin">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-dismissible fade show" role="alert">
+                    {% for message in messages %}
+                        <strong>{{ message }}</strong>
+                    {% endfor %}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endif %}
+        {% endwith %}
+        <form action="{{ url_for('signup') }}" method="post">
+            <img class="rounded-circle border border-theme me-3" src="static/icons/orange_alien.ico" alt="" width="42"
+                 height="42">
+            <h1 class="h3 mb-3 fw-normal">Please Enter Credentials</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                       required>
+                <label for="email">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password"
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm"
+                       placeholder="Password" required>
+                <label for="passwordConfirm">Confirm Password</label>
+            </div>
+
+            <button class="btn btn-primary w-100 py-2" type="submit">Sign up</button>
+        </form>
+        <a href="{{ url_for('home') }}" class="h6 mb-2 py-4 fw-secondary">Already registered? Sign in here</a>
+    </div>
+</main>
+{% endblock %}

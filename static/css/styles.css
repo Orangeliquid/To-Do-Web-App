@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+.app-background {
+    background-color: rgba(33, 37, 41, 1) !important;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: transparent; /* or background-color: #yourcolor; */
+    margin: 0;
+    padding: 0;
+}
+
+.h6 {
+    margin-top: 20px;
+    font-size: 1rem; /* Adjust the font size as needed */
+}
+
+.o-b-bg {
+    background-image: url('../images/blurry-gradient-O-B.svg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image within the container */
+    overflow: hidden;
+    min-height: 100vh; /* Ensures the container is at least the height of the viewport */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.o-b-bg2 {
+    background-image: url('../images/blurry-gradient-O-B2.svg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image within the container */
+    overflow: hidden;
+    min-height: 100vh; /* Ensures the container is at least the height of the viewport */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.o-p-bg {
+    background-image: url('../images/blurry-gradient-O-P.svg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image within the container */
+    overflow: hidden;
+    min-height: 100vh; /* Ensures the container is at least the height of the viewport */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.dot-bg {
+    background-image: url('../images/blob-scene-bg2.svg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image within the container */
+    overflow: hidden;
+    min-height: 100vh; /* Ensures the container is at least the height of the viewport */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.footer-match {
+    --bs-text-opacity: 1;
+    color: white; !important;
+}
+
+.dashboard-marg {
+    margin-top: 5rem !important;
+}
+
+.hero-border {
+    border: solid transparent 8px; /* Remove default border */
+    border-radius: 0%; /* Makes it circular */
+    padding: 35px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensures the padding is included in the total width/height */
+    margin-top: 20px;
+    box-shadow:
+        0 0 0 5px rgba(33, 37, 41, 1), /* Outer highlight */
+        inset 0 0 0 5px rgba(33, 37, 41, 1); /* Inner highlight */
+}
+
+
+
+
+
