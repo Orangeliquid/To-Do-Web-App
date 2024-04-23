@@ -9,7 +9,7 @@ Side-note: MongoDB is used to keep track of all users To-Dos - Make sure MongoDB
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Screenshots Including Two Regional Endpoints](#screenshots-including-two-regional-endpoints)
+- [Screenshots](#screenshots)
     - [Index](#index)
     - [Sign-Up](#sign-up)
     - [Dashboard](#dashboard)
@@ -53,7 +53,7 @@ To run the Remote Work Cafes locally, follow these steps:
 - To-Dos are saved and deleted uniquely for all users
 - Hashed passwords and dashboard denial for non-authenticated users
 
-## Screenshots Including Two Regional Endpoints
+## Screenshots
 
 ### Index
 
